@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormGroup  , FormBuilder} from '@angular/forms';
+import { FormGroup,FormBuilder, Validators} from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -16,8 +16,8 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
 
     this.loginVal = this.fb.group({
-      email : [''],
-      password : ['']
+      email : ['' , [Validators.required , Validators.email]],
+      password : ['' , Validators.required]
     })
     
   }
@@ -38,5 +38,12 @@ export class LoginComponent implements OnInit {
     err =>{
       alert("somthing went wrong!")
     })   
+  }
+  get emailValidator(){
+    return this.loginVal.get('email')
+  }
+
+  get passValidator(){
+    return this.loginVal.get('password')
   }
 }
