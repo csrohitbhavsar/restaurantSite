@@ -14,7 +14,7 @@
       "email": "hariyali@gmail.com",
       "mobile": "7654738976",
       "address": "vadodara , gujarat",
-      "Service": "panjabi"
+      "Service": "veg"
     },
     {
       "id": 3,
@@ -63,6 +63,20 @@
       "email": "rohit@gmail.com",
       "password": "1234567",
       "id": 5
+    },
+    {
+      "name": "rohit",
+      "mobile": "9712796321",
+      "email": "rohit@gmail.com",
+      "password": "12345",
+      "id": 6
+    },
+    {
+      "name": "rd",
+      "mobile": "2311231231",
+      "email": "rd@gmail.com",
+      "password": "123",
+      "id": 7
     }
   ],
   "profile": {
