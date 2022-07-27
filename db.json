@@ -47,6 +47,14 @@
       "mobile": "7799098987",
       "address": "vadodara , gujarat",
       "Service": "veg and nonveg"
+    },
+    {
+      "id": 7,
+      "name": "surya palace",
+      "email": "surya@gmail.com",
+      "mobile": "9898989898",
+      "address": "vadodara",
+      "Service": "veg and nonveg"
     }
   ],
   "users": [
@@ -56,27 +64,6 @@
       "email": "rohit@gmail.com",
       "password": "rohit@gmail",
       "id": 1
-    },
-    {
-      "name": "rohit",
-      "mobile": "9712762136",
-      "email": "rohit@gmail.com",
-      "password": "1234567",
-      "id": 5
-    },
-    {
-      "name": "rohit",
-      "mobile": "9712796321",
-      "email": "rohit@gmail.com",
-      "password": "12345",
-      "id": 6
-    },
-    {
-      "name": "rd",
-      "mobile": "2311231231",
-      "email": "rd@gmail.com",
-      "password": "123",
-      "id": 7
     }
   ],
   "profile": {
