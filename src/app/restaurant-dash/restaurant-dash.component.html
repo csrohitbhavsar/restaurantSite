@@ -2,9 +2,10 @@
     <div class="container-fluid">
         <h2>Reataurant Records App</h2>
         <div class="d-flex">
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="clickAddRestro()">Add
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                (click)="clickAddRestro()">Add
                 Restaurant</button>
-                <button routerLink="/login" style="margin-left : 10px" class="btn btn-danger mx-2">Logout</button>
+            <button routerLink="/login" style="margin-left : 10px" class="btn btn-danger mx-2">Logout</button>
         </div>
     </div>
 </nav>
@@ -43,7 +44,8 @@
             <td>{{data.address}}</td>
             <td>{{data.Service}}</td>
             <td>
-                <button type="button" class="btn btn-info" (click)="editData(data)" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button> &nbsp;
+                <button type="button" class="btn btn-info" (click)="editData(data)" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Edit</button> &nbsp;
                 <button type="button" class="btn btn-danger" (click)="deleteData(data)">Delete</button>
             </td>
         </tr>
@@ -60,7 +62,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form [formGroup] = "formVal">
+                <form [formGroup]="formVal">
                     <div class="mb-3">
                         <label for="exampleInputID" class="form-label">ID</label>
                         <input type="id" class="form-control" formControlName="id" id="exampleInputID">
@@ -71,7 +73,8 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmailAddress" class="form-label">Email address</label>
-                        <input type="email_address" class="form-control" formControlName="email" id="exampleInputEmailAddress">
+                        <input type="email_address" class="form-control" formControlName="email"
+                            id="exampleInputEmailAddress">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputMobile" class="form-label">Mobile</label>
@@ -88,9 +91,11 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button"  id = 'clear' class="btn btn-secondary">Close</button>
-                <button *ngIf="showAdd" type="button" class="btn btn-primary"  (click)="addRestaurant()" >Add Restaurant</button>
-                <button *ngIf="showbtn" type="button" class="btn btn-primary"  (click)="updateData()" >Update Restaurant</button>
+                <button type="button" id='clear' class="btn btn-secondary">Close</button>
+                <button *ngIf="showAdd" type="button" class="btn btn-primary" (click)="addRestaurant()">Add
+                    Restaurant</button>
+                <button *ngIf="showbtn" type="button" class="btn btn-primary" (click)="updateData()">Update
+                    Restaurant</button>
 
             </div>
         </div>

@@ -15,35 +15,35 @@ export class SignupComponent implements OnInit {
 
   ngOnInit(): void {
     this.signupForm = this.fb.group({
-      name: new FormControl('' , Validators.required),
-      mobile: new FormControl('' , [Validators.required , Validators.maxLength(10) , Validators.minLength(10)] ),
-      email: new FormControl('' , [Validators.required , Validators.email]),
-      password: new FormControl('' , Validators.required)
+      name: new FormControl('', Validators.required),
+      mobile: new FormControl('', [Validators.required, Validators.maxLength(10), Validators.minLength(10)]),
+      email: new FormControl('', [Validators.required, Validators.email]),
+      password: new FormControl('', Validators.required)
     })
   }
 
-  signup(){
-    var info = this.http.post<any>("http://localhost:3000/users", this.signupForm.value).subscribe(_res =>{
+  signup() {
+    var info = this.http.post<any>("http://localhost:3000/users", this.signupForm.value).subscribe(_res => {
       alert("registration succesfully");
       this.signupForm.reset();
       console.log(info)
       this.router.navigate(['login'])
     },
-    _err=>{
-      alert("somthing went wrong")
-    })
-    }
+      _err => {
+        alert("somthing went wrong")
+      })
+  }
 
-    get nameValidator(){
-      return this.signupForm.get('name')
-    }
-    get numberValidator(){
-      return this.signupForm.get('mobile')
-    }
-    get emailValidator(){
-      return this.signupForm.get('email')
-    }
-    get passValidator(){
-      return this.signupForm.get('password')
-    }
+  get nameValidator() {
+    return this.signupForm.get('name')
+  }
+  get numberValidator() {
+    return this.signupForm.get('mobile')
+  }
+  get emailValidator() {
+    return this.signupForm.get('email')
+  }
+  get passValidator() {
+    return this.signupForm.get('password')
+  }
 }

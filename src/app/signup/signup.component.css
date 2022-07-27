@@ -1,11 +1,11 @@
 .card {
     margin-top: 15px;
-    border: 1px solid blue ;
+    border: 1px solid blue;
     width: 550px;
-    padding:  45px;
+    padding: 45px;
     position: absolute;
-    top:  10%;
-    left :35%;
+    top: 10%;
+    left: 35%;
     border-radius: 20px;
     background-color: lightcyan;
 }
@@ -14,6 +14,6 @@
     margin-bottom: 30px;
 }
 
-.btn{
+.btn {
     align-items: center;
 }

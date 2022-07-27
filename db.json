@@ -17,14 +17,6 @@
       "Service": "veg"
     },
     {
-      "id": 3,
-      "name": "Taj",
-      "email": "taj@gmail.com",
-      "mobile": "6775467893",
-      "address": "vadodara , gujarat",
-      "Service": "veg and nonveg"
-    },
-    {
       "id": 4,
       "name": "veronica hotel",
       "email": "veronica@gmail.com",
