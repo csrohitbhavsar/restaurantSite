@@ -1,0 +1,22 @@
+{
+  "posts": [],
+  "users": [
+    {
+      "name": "vishva",
+      "mobile": "9723997197",
+      "email": "vishva@gmail.com",
+      "password": "qd2qd2qd",
+      "id": 1
+    },
+    {
+      "name": "vishva",
+      "mobile": "9723997197",
+      "email": "vishva@gmail.com",
+      "password": "asascasc",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "rohit bhavsar"
+  }
+}
